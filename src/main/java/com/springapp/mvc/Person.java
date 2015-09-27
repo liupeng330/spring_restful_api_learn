@@ -1,14 +1,6 @@
 package com.springapp.mvc;
 
-import org.springframework.stereotype.Component;
-
-import java.io.Serializable;
-
-/**
- * Created by peng on 9/26/15.
- */
-@Component
-public class Person implements Serializable
+public class Person
 {
     public String getName()
     {
