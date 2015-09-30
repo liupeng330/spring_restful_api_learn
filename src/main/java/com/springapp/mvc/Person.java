@@ -24,4 +24,10 @@ public class Person
 
     private String name;
     private int age;
+
+    @Override
+    public String toString()
+    {
+        return String.format("Name is '%s', Age is '%d'\n", getName(), getAge());
+    }
 }
