@@ -46,7 +46,7 @@ public class PersonController
     public ResponseEntity<Person> createPerson(@RequestBody Person p)
     {
         System.out.println("Will create person for " + p.getName());
-        return new ResponseEntity<Person>(HttpStatus.ACCEPTED);
+        return new ResponseEntity<Person>(p, HttpStatus.ACCEPTED);
     }
 
     //通过PathVariable来获取url路径中的值
